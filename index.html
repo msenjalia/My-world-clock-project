@@ -12,7 +12,35 @@
       href="css/style.css" />
   </head>
   <body>
-    <h1>World Clock</h1>
+    <div class="container">
+      <h1>World Clock</h1>
+      <select
+        name=""
+        id="cities">
+        <option value="">select a city</option>
+        <option value="Toronto"></option>
+        <option value="New York"></option>
+        <option value="London"></option>
+        <option value="Paris"></option>
+      </select>
+
+      <div class="city">
+        <h2>Toronto</h2>
+        <div class="date">nov 11, 2023</div>
+        <div class="time">12:00 a</div>
+      </div>
+      <div class="city">
+        <h2>ottawa</h2>
+        <div class="date">nov 11, 2023</div>
+        <div class="time">12:00 a</div>
+      </div>
+      <div class="city">
+        <h2>montreal</h2>
+        <div class="date">nov 11, 2023</div>
+        <div class="time">12:00 a</div>
+      </div>
+      
+    </div>
     <footer>
       Coded by Monica
       <a
@@ -21,6 +49,7 @@
         open sourced on github
       </a>
     </footer>
+
     <script src="javascript/index.js"></script>
   </body>
 </html>
