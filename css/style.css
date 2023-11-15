@@ -53,6 +53,7 @@ p {
 
 .date {
   opacity: 0.9;
+  display: flex;
 }
 .time {
   font-size: 32px;
@@ -61,12 +62,17 @@ p {
   align-items: center;
 }
 
+.third {
+  margin-left: -4px;
+}
 .second {
   color: #d6b11b;
+  margin-left: -4px;
 }
 
 .first {
   color: #1797a2;
+  margin-left: -4px;
 }
 
 small {
