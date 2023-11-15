@@ -55,9 +55,10 @@ p {
   opacity: 0.8;
 }
 .time {
-  font-size: 36px;
+  font-size: 32px;
   font-family: monospace;
-  margin-top: 5px;
+  margin-top: 15px;
+  align-items: center;
 }
 
 .second {
@@ -68,6 +69,9 @@ p {
   color: #1797a2;
 }
 
+small {
+  font-size: 20px;
+}
 footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.8);

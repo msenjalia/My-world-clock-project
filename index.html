@@ -6,7 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
     <title>World Clock Project</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
     <link
       rel="stylesheet"
       href="css/style.css" />
@@ -24,7 +25,9 @@
         <option value="Paris">Paris</option>
       </select>
 
-      <div class="city">
+      <div
+        class="city"
+        id="first">
         <div>
           <p class="first">Toronto</p>
           <div class="date">Nov 11, 2023</div>
@@ -32,17 +35,21 @@
         <div class="time">12:00 <small>AM</small></div>
       </div>
 
-      <div class="city">
+      <div
+        class="city"
+        id="second">
         <div>
-          <p class="second">Ottawa</p>
+          <p class="second">Vancouver</p>
           <div class="date">Nov 11, 2023</div>
         </div>
         <div class="time">12:00 <small>AM</small></div>
       </div>
 
-      <div class="city">
+      <div
+        class="city"
+        id="third">
         <div>
-          <p class="third">Montreal</p>
+          <p class="third">Halifax</p>
           <div class="date">Nov 11, 2023</div>
         </div>
         <div class="time">12:00 <small>AM</small></div>
