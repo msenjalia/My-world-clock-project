@@ -32,6 +32,10 @@ function updateCurrentTime() {
 
 function showSelectedCity(event) {
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+
   let cityTime = moment().tz(event.target.value);
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
 
