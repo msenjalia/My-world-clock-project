@@ -4,7 +4,7 @@ function updateCurrentTime() {
   let firstTimeElement = firstElement.querySelector(".time");
   let currentFirstElement = moment().tz("America/Toronto");
 
-  firstDateElement.innerHTML = currentFirstElement.format("MMMM Do, YYYY");
+  firstDateElement.innerHTML = currentFirstElement.format("MMM Do, YYYY");
   firstTimeElement.innerHTML = currentFirstElement.format(
     "hh:mm [<small>] A [</small>]"
   );
@@ -14,7 +14,7 @@ function updateCurrentTime() {
   let secondTimeElement = secondElement.querySelector(".time");
 
   let currentSecondElement = moment().tz("America/Vancouver");
-  secondDateElement.innerHTML = currentSecondElement.format("MMMM Do, YYYY");
+  secondDateElement.innerHTML = currentSecondElement.format("MMM Do, YYYY");
   secondTimeElement.innerHTML = currentSecondElement.format(
     "hh:mm [<small>] A[</small>]"
   );
@@ -24,7 +24,7 @@ function updateCurrentTime() {
   let thirdTimeElement = thirdElement.querySelector(".time");
 
   let currentThirdElement = moment().tz("America/Halifax");
-  thirdDateElement.innerHTML = currentThirdElement.format("MMMM Do, YYYY");
+  thirdDateElement.innerHTML = currentThirdElement.format("MMM Do, YYYY");
   thirdTimeElement.innerHTML = currentThirdElement.format(
     "hh:mm [<small>] A [</small>] "
   );
@@ -45,11 +45,11 @@ function showSelectedCity(event) {
   <div class="currentCity">
     <div>
       <p class="currentCity">${cityName}</p>
-      <div class="currentDate">${cityTime.format("MMMM Do, YYYY")}</div>
+      <div class="currentDate">${cityTime.format("dddd, MMMM Do, YYYY")}</div>
     </div>
     <div class="currentTime">
       ${cityTime.format(
-        "hh:mm [<small>] A  [<span id=zone>]z[</span>][</small>]"
+        "hh:mm [<small>] A [<span id=zone>]z[</span>][</small>]"
       )} 
     </div>
   </div> `;

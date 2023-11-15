@@ -10,7 +10,7 @@
   box-shadow: 25px 0px 20px -33px rgba(0, 0, 0, 0.6),
     -25px 0px 20px -33px rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(232, 116, 73, 0.851);
-  border-radius: 6px;
+  border-radius: 15px;
   padding: 10px 15px 30px;
   margin: 0 auto;
   margin-bottom: 15px;
@@ -90,6 +90,15 @@ small {
 #zone {
   color: #d6b11b;
   font-size: 22px;
+}
+a {
+  color: #27635a;
+  text-decoration: none;
+}
+#homeLink {
+  font-size: 18px;
+  display: flex;
+  justify-content: end;
 }
 footer {
   text-align: center;
